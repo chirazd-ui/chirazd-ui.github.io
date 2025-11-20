@@ -28,6 +28,10 @@ Ce portfolio présente mon **travail de traduction** pour diverses plateformes :
 
 **Visitez mon portfolio** : [https://chirazd-ui.github.io](https://chirazd-ui.github.io)
 
----
+## Droits d'Auteur
 
-© 2025 - Tous droits réservés
+© 2025 Chiraz Darchérif - Tous droits réservés.
+
+Ce portfolio et son contenu (textes, images, code) sont protégés par le droit d'auteur. Toute reproduction, copie ou utilisation sans autorisation écrite est strictement interdite.
+
+---
