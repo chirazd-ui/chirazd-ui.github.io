@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE Translations SYSTEM "MyPortfolio.dtd"> <!-- I chose to reference it as an external dtd to gain space in the file and not repeat the same data in the xml file. -->
+<?xml-stylesheet type="text/css" href="MyPortfolioAccueil.css"?>
+<Translations xml:lang="fr">
+  <Webtoon>
+    <Title xml:lang="fr">Alliance Secrète</Title>
+    <OriginalTitle xml:lang="ko">시크릿 동맹</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="inactive"/>
+      <Platform name="Ono" status="active" url="https://www.ono.live/webtoon/alliance-secrete"/>
+    </PublishedOnPlatform>
+    <Genre>Mystère, Romance, Drame</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>45</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>45</TotalChapters>
+    <Cover src="img/alliance-secrete.jpg" alt="Cover of Alliance Secrète"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">Vous êtes à moi M. parfait !</Title>
+    <OriginalTitle xml:lang="ko">훈남님 제가 꼬셔보겠습니다</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="inactive"/>
+    </PublishedOnPlatform>
+    <Genre>Romance, Historique, Isekai</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>83</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>83</TotalChapters>
+    <Cover src="img/vous-etes-a-moi-m-parfait.jpg" alt="Cover of Vous êtes à moi M. parfait !"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">Ardents Ennemies</Title>
+    <OriginalTitle xml:lang="ko">뜨거운 웬수</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="inactive"/>
+      <Platform name="Ono" status="active" url="https://www.ono.live/webtoon/ardents-ennemis"/>
+    </PublishedOnPlatform>
+    <Genre>Romance</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>60</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>60</TotalChapters>
+    <Cover src="img/ardents-ennemis.jpg" alt="Cover of Ardents Ennemies"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">Piégée dans un mariage frauduleux !</Title>
+    <OriginalTitle xml:lang="ko">이건 명백한 사기결혼이다</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="active" url="https://www.lezhinfr.com/detail/daf_0000394"/>
+    </PublishedOnPlatform>
+    <Genre>Fantastique, Isekai, Romance</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>107</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>107</TotalChapters>
+    <Cover src="img/piegee-dans-un-mariage-frauduleux.jpg"
+      alt="Cover of Piégée dans un mariage frauduleux !"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">Les correspondances de Charlotte</Title>
+    <OriginalTitle xml:lang="ko">샬롯의 편지</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Studio Charon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Verytoon" status="inactive"/>
+      <Platform name="Ono" status="active"
+        url="https://www.ono.live/webtoon/les-correspondances-de-charlotte"/>
+    </PublishedOnPlatform>
+    <Genre>Romance, Mystère</Genre>
+    <TranslatedChapters>
+      <StartChapter>30</StartChapter>
+      <EndChapter>80</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>80</TotalChapters>
+    <Cover src="img/charlotte.jpg" alt="Cover of Les correspondances de Charlotte"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">Comme tout le monde !</Title>
+    <OriginalTitle xml:lang="ko">평범해지고 싶어</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Verytoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Verytoon" status="inactive"/>
+    </PublishedOnPlatform>
+    <Genre>Slice of Life, Action, Romande</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>100</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>100</TotalChapters>
+    <Cover src="img/comme.jpg" alt="Cover of Comme tout le monde !"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="en">The Man of Christmas</Title>
+    <OriginalTitle xml:lang="ko">크리스마스의 남자</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Verytoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Verytoon" status="inactive"/>
+    </PublishedOnPlatform>
+    <Genre>Romance, Comédie</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>89</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>89</TotalChapters>
+    <Cover src="img/christmas.jpg" alt="Cover of The Man of Christmas"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="en">Le retour de la légende</Title>
+    <OriginalTitle xml:lang="ko">하늘의 이야기</OriginalTitle>
+    <Status>En cours</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="active" url="https://www.lezhinfr.com/detail/daf_1000557"/>
+      <Platform name="Ono" status="active"
+        url="https://www.ono.live/webtoon/le-retour-de-la-legende"/>
+    </PublishedOnPlatform>
+    <Genre>Action, Fantastique, Isekai</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>57</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>168+</TotalChapters>
+    <Cover src="img/le retour de la legende.jpg" alt="Cover of Le retour de la légende"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">Oui, mon maître !</Title>
+    <OriginalTitle xml:lang="ko">독주</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="active" url="https://www.lezhinfr.com/detail/daf_1000598"/>
+    </PublishedOnPlatform>
+    <Genre>Historique, Romance, Adult (18+)</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>38</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>38</TotalChapters>
+    <Cover src="img/oui_mon_maitre.jpg" alt="Cover of Oui, mon maître !"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="fr">La Fleur cachée de la lune</Title>
+    <OriginalTitle xml:lang="ko">폐월화 : 야수의 꽃</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Delitoon</Client>
+    <PublishedOnPlatform>
+      <Platform name="Lezhin FR" status="active" url="https://www.lezhinfr.com/detail/daf_1000619"/>
+    </PublishedOnPlatform>
+    <Genre>Fantastique, Historique, Romance</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>29</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>126</TotalChapters>
+    <Cover src="img/fleur.jpg" alt="Cover of La Fleur cachée de la lune"/>
+  </Webtoon>
+
+  <Webtoon>
+    <Title xml:lang="en">Suspicious Cohabitation</Title>
+    <OriginalTitle xml:lang="ko">수상한 동거</OriginalTitle>
+    <Status>Terminée</Status>
+    <Client>Piccoma</Client>
+    <PublishedOnPlatform>
+      <Platform name="Piccoma" status="inactive"/>
+    </PublishedOnPlatform>
+    <Genre>Slice of Life, Romance</Genre>
+    <TranslatedChapters>
+      <StartChapter>1</StartChapter>
+      <EndChapter>55</EndChapter>
+    </TranslatedChapters>
+    <TotalChapters>55</TotalChapters>
+    <Cover src="img/suspicious.jpg" alt="Cover of Suspicious Cohabitation"/>
+  </Webtoon>
+</Translations>

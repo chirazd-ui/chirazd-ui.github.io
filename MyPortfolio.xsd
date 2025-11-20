@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="https://www.w3.org/2009/01/xml.xsd"/>
+  <!-- Import xml: namespace -->
+  <!-- A window message will appear in Oxygen Editor when opening the file so please click on "Allow and Remember" to allow the importation. -->
+
+  <xs:element name="Translations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Webtoon" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute ref="xml:lang" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Root element for Translations, containing multiple Webtoon entries -->
+  <!-- xml:lang attribute specifies the language of the content -->
+
+  <xs:element name="Webtoon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Title"/>
+        <xs:element ref="OriginalTitle"/>
+        <xs:element ref="Status"/>
+        <xs:element ref="Client"/>
+        <xs:element ref="PublishedOnPlatform"/>
+        <xs:element ref="Genre"/>
+        <xs:element ref="TranslatedChapters"/>
+        <xs:element ref="TotalChapters"/>
+        <xs:element ref="Cover"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- Webtoon element definition, containing Title, OriginalTitle, Status, Client, PublishedOnPlatform, Genre, TranslatedChapters, TotalChapters, and Cover -->
+
+  <xs:element name="Title">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute ref="xml:lang" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <!-- Title element containing the title of the webtoon, with a required xml:lang attribute specifying the language of the title -->
+
+  <xs:element name="OriginalTitle">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute ref="xml:lang" use="required"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <!-- OriginalTitle element containing the original title of the webtoon, with a required xml:lang attribute specifying the language of the original title -->
+
+  <xs:element name="Status">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="En cours"/>
+        <xs:enumeration value="Terminée"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <!-- Status element indicating whether the webtoon is "En cours" or "Terminée" -->
+
+  <xs:element name="Client" type="xs:string"/>
+  <!-- Client element representing the name of the client, which could be a translation studio or a publishing platform -->
+
+  <xs:element name="PublishedOnPlatform">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Platform" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- PublishedOnPlatform element that contains a sequence of Platform elements. Each platform represents where the webtoon is published -->
+
+  <xs:element name="Platform">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required"/>
+      <xs:attribute name="status">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="active"/>
+            <xs:enumeration value="inactive"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="url" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <!-- Platform element representing a platform where the webtoon is published. 
+       - "name" attribute specifies the name of the platform (required)
+       - "status" attribute specifies whether the platform is "active" or "inactive"
+       - "url" attribute is optional, and should only be specified for active platforms -->
+
+  <xs:element name="Genre" type="xs:string"/>
+  <!-- Genre element representing the genre of the webtoon -->
+
+  <xs:element name="TranslatedChapters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StartChapter" type="xs:integer"/>
+        <xs:element name="EndChapter" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!-- TranslatedChapters element containing the start and end chapters for the translated webtoon range. 
+       StartChapter and EndChapter are both of integer type. -->
+
+  <xs:element name="TotalChapters" type="xs:string"/>
+  <!-- TotalChapters element representing the total number of chapters in the webtoon. In here I had to chose "xs:string" over "xs:integer" because one of the webtoons is still ongoing and I need to use the sign"+" after the lastest chapter to indicate that. -->
+
+  <xs:element name="Cover">
+    <xs:complexType>
+      <xs:attribute name="src" type="xs:string" use="required"/>
+      <xs:attribute name="alt" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:element>
+<!-- Cover element containing attributes for the file path (src) and a description (alt) of the translated webtoon's cover. -->
+</xs:schema>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="MyPortfolioAccueil.css"?>
+<page xml:lang="fr">
+	<title>À propos</title>
+	<content>
+		<section id="presentation">
+			<h2>À propos</h2>
+			<p>Diplômée en maitrise de traduction littéraire et de traduction multilingue, avec la
+				combinaison linguistique coréen vers le français, à l'Inalco, j'ai occupé pendant 2
+				ans le poste de "Translation Manager Assistant" en freelance pour la première
+				plateforme de diffusion de Webtoon en France, "Delitoon". J'ai été traductrice
+				freelance de Webtoon de 2020 à 2023 pour Delitoon, Studio Charon, Verytoon et
+				Piccoma. Mes combinaisons linguistiques incluent l'arabe, le français, le coréen et
+				l'anglais.</p>
+		</section>
+
+		<section id="contact">
+			<h2>Contact</h2>
+			<p>
+				<email>chiraz.darcherif@gmail.com</email>
+			</p>
+		</section>
+	</content>
+</page>

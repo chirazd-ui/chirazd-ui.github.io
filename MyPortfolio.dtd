@@ -1,0 +1,32 @@
+<!-- Elements -->
+<!ELEMENT Translations (Webtoon+)> <!-- The root element, which contains multiple "Webtoon" entries.-->
+<!ELEMENT Webtoon (Title, OriginalTitle, Status, Client, PublishedOnPlatform+, Genre, TranslatedChapters, TotalChapters, Cover)> <!-- The child elements within each "Webtoon" entry. -->
+<!ELEMENT Title (#PCDATA)> <!-- The title of the webtoon as it appears on the French cover. Some titles were translated into French, while others were kept in English and kept in English on the French cover. The Client chose the title. -->
+<!ELEMENT OriginalTitle (#PCDATA)> <!-- The original title of the webtoon in its native language. Some titles are in Korean, while others are in English, even if the webtoon is in Korean. -->
+<!ELEMENT Status (#PCDATA)> <!-- The status of the webtoon. This refers to whether it is "Terminée" or "En cours" in Korea, not on the publishing platform. -->
+<!ELEMENT Client (#PCDATA)> <!-- The name of the client. It can be a translation studio or a publishing platform. -->
+<!ELEMENT PublishedOnPlatform (Platform+)> <!-- Platforms where the webtoon is published, containing one or more Platform elements. -->
+<!ELEMENT Platform EMPTY> <!-- Name of the platform. This element may include the attributes "status" (active/inactive) and "URL" (if the platform is active). -->
+<!ELEMENT Genre (#PCDATA)> <!-- Genre of the webtoon. -->
+<!ELEMENT TranslatedChapters (StartChapter, EndChapter)> <!-- The translated chapter, contains the start and end chapters as integers. -->
+<!ELEMENT StartChapter (#PCDATA)> <!-- The starting chapter of the Webtoon. -->
+<!ELEMENT EndChapter (#PCDATA)> <!-- The ending chapter of the Webtoon. -->
+<!ELEMENT TotalChapters (#PCDATA)> <!-- Total number of chapters in the webtoon. -->
+<!ELEMENT Cover EMPTY> <!-- The French cover for the translated webtoon with src and alt. -->
+
+<!-- Attributes -->
+
+<!ATTLIST Translations xml:lang CDATA #REQUIRED> <!-- To indicate the language of the document which is French. -->
+<!ATTLIST Title xml:lang (fr | en) #REQUIRED> <!-- To indicate the language of the title for the translated version which can be either in French or English. -->
+<!ATTLIST OriginalTitle xml:lang (ko | en) #REQUIRED> <!-- To indicate the language of the original title, which can be either in Korean or English. -->
+
+<!ATTLIST Platform 
+    name CDATA #REQUIRED 
+    status (active | inactive) #REQUIRED 
+    url CDATA #IMPLIED> 
+<!-- The name of the platform. -->
+<!-- Status of the platform (active or inactive). -->
+<!-- URL of the platform, only required for active platforms. -->
+<!ATTLIST Cover 
+    src CDATA #REQUIRED 
+    alt CDATA #REQUIRED> <!-- Cover image with file path and description for the alt texte. -->

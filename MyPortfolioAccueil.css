@@ -1,0 +1,191 @@
+
+body {
+  font-family: 'Anime Ace'; 
+  margin: 0;
+  padding: 0;
+  background-color: #FCF7FB; 
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  padding: 40px 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+header img {
+  border-radius: 50%; 
+  margin-bottom: 20px;
+  border: 4px solid #d18fd3;  
+}
+
+header h1 {
+  font-size: 2em; 
+  color: #7A4DB3; 
+  font-style: italic; 
+  margin: 0; 
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #7A4DB3; 
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #D18FD3; 
+}
+
+header nav a:active {
+  text-decoration: underline;
+  color: #D18FD3;
+ 
+}
+
+header nav a.active {
+  text-decoration: underline;
+  color: #D18FD3;
+ 
+}
+
+
+.title-page {
+  font-size: 2em;
+  font-weight: bold;
+  color: #7A4DB3; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.intro-text {
+  font-size: 1.1em;
+  color: #555; 
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-style: italic; 
+}
+
+
+Translations {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px; 
+  padding: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+
+Webtoon {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease; 
+  height: auto; 
+}
+
+
+Webtoon:hover {
+  transform: scale(1.05); 
+}
+
+
+Webtoon Cover {
+  display: block;
+  width: 100%;
+  height: 200px; 
+  overflow: hidden; 
+}
+
+Webtoon Cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
+Webtoon Title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+
+Webtoon OriginalTitle {
+  font-size: 16px;
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+}
+
+
+Webtoon Status,
+Webtoon Genre,
+Webtoon TranslatedChapters,
+Webtoon TotalChapters,
+Webtoon Client {
+  font-size: 15px;
+  color: #555;
+  margin-top: 5px;
+}
+
+
+PublishedOnPlatform {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px; 
+  text-align: center; 
+}
+
+PublishedOnPlatform Platform {
+  display: inline-block; 
+  margin: 0 5px; 
+}
+
+
+.platform.active {
+  color: #00008B;
+  text-decoration: none;
+}
+
+.platform.active:hover {
+  color: #ADD8E6;
+  text-decoration: underline;
+}
+
+
+.platform.inactive {
+  color: gray;
+  text-decoration: none;
+}
+
+
+#copyright
+{
+color:black;
+font-size:16px;
+text-align:center;
+font-style: italic;
+bottom: 0;
+left: 0;
+right: 0;
+}
