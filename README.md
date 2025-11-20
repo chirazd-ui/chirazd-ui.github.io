@@ -28,10 +28,6 @@ Ce portfolio présente mon **travail de traduction** pour diverses plateformes :
 
 **Visitez mon portfolio** : [https://chirazd-ui.github.io](https://chirazd-ui.github.io)
 
-## Contact
-
-*Portfolio créé pour présenter mon travail en tant que traductrice freelance de webtoons*
-
 ---
 
 © 2025 - Tous droits réservés
